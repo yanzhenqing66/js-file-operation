@@ -1,0 +1,24 @@
+{
+  "name": "file-operation",
+  "version": "1.0.0",
+  "description": "File upload and file stream Download",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanzhenqing66/js-file-operation.git"
+  },
+  "keywords": [
+    "[\"file\"",
+    "\"upload\"",
+    "\"file-stream-download\"]"
+  ],
+  "author": "yanzhenqing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanzhenqing66/js-file-operation/issues"
+  },
+  "homepage": "https://github.com/yanzhenqing66/js-file-operation#readme"
+}
