@@ -1,5 +1,5 @@
 {
-  "name": "file-operation",
+  "name": "js-file-operation",
   "version": "1.0.0",
   "description": "File upload and file stream Download",
   "main": "index.js",
