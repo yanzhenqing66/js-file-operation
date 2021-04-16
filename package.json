@@ -11,9 +11,9 @@
     "url": "git+https://github.com/yanzhenqing66/js-file-operation.git"
   },
   "keywords": [
-    "[\"file\"",
-    "\"upload\"",
-    "\"file-stream-download\"]"
+    "file",
+    "upload",
+    "file-stream-download"
   ],
   "author": "yanzhenqing",
   "license": "ISC",
