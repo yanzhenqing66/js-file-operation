@@ -1,4 +1,4 @@
-import { uploadFile } from './src/uploadFile/uploadFile.js'
-import { fileStreamDownload } from './src/fileStreamDownload/fileStreamDownload.js'
+const uploadFile = require('./src/uploadFile/uploadFile.js')
+const fileStreamDownload = require('./src/fileStreamDownload/fileStreamDownload.js')
 
-export { uploadFile, fileStreamDownload }
+module.exports = { uploadFile, fileStreamDownload }

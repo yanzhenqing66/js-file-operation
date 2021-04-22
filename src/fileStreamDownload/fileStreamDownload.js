@@ -10,7 +10,7 @@ const fileStreamDownload = (fileStream, fileName) => {
     try {
       const a = document.createElement('a')
       a.style.display = 'none'
-      a.download = fileName
+      a.download = fileName || '下载'
       a.href = URL.createObjectURL(new Blob(['\uFEFF' + fileStream]))  // '\uFEFF' 解决乱码
       document.body.appendChild(a)
       a.click()
@@ -23,4 +23,4 @@ const fileStreamDownload = (fileStream, fileName) => {
   }
 }
 
-export { fileStreamDownload }
+module.exports = fileStreamDownload
