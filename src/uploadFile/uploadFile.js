@@ -11,10 +11,10 @@ const uploadFile = (e, typeList) => {
       const file = e.target.files[0]
       const { name } = file
       const filetype = name.substring(name.lastIndexOf('.')).toLowerCase()
-      if (typeList.indexOf(filetype) === -1) {
-        reject(`文件格式必须为${type}`)
+      if (Array.isArray(typeList)) {
+        typeList.includes(filetype) ? resolve(file) : reject(`文件格式必须为${typeList}`)
       } else {
-        resolve(file)
+        reject('typeList must be array type')
       }
     } else {
       reject('please select file')
