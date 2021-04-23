@@ -13,7 +13,7 @@ const uploadFile = (e, typeList) => {
       if (Array.isArray(typeList)) {
         typeList.map(type => type.toLowerCase()).includes(filetype)
           ? resolve(file)
-          : reject(`文件格式必须为${typeList.join('/')}`)
+          : reject(`文件格式必须为${typeList.join('/').toUpperCase()}格式`)
       } else {
         reject('typeList must be array type')
       }
