@@ -6,21 +6,20 @@
  */
 
 const fileStreamDownload = (fileStream, fileName) => {
-  if (fileStream) {
-    try {
+  return new Promise((resolve, reject) => {
+    if (fileStream) {
       const a = document.createElement('a')
       a.download = fileName || 'download'
       a.style.display = 'none'
-      a.href = URL.createObjectURL(new Blob(['\uFEFF' + fileStream]))  // '\uFEFF' 前面加解决乱码
+      a.href = URL.createObjectURL(new Blob(['\uFEFF' + fileStream]))  // 前面加'\uFEFF'解决乱码
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
-    } catch (error) {
-      throw new Error(error)
+      resolve(a.href)
+    } else {
+      reject('file not found')
     }
-  } else {
-    throw new Error('file not found')
-  }
+  })
 }
 
 export { fileStreamDownload }
