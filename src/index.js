@@ -1,4 +1,5 @@
-import { uploadFile } from './uploadFile/uploadFile'
-import { fileStreamDownload } from './fileStreamDownload/fileStreamDownload'
+import { uploadFile } from './uploadFile'
+import { fileStreamDownload } from './fileStreamDownload'
+import { fileReader } from './fileReader'
 
-export { uploadFile, fileStreamDownload }
+export { uploadFile, fileStreamDownload, fileReader }
