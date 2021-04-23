@@ -1,5 +1,5 @@
 /**
- * @file: 下载文档流
+ * @file: 下载文件流
  * @author: yan zhenqing
  * @param {fileStream} fileStream 文件流
  * @param {fileName} filename 文件名
@@ -23,4 +23,4 @@ const fileStreamDownload = (fileStream, fileName) => {
   }
 }
 
-module.exports = fileStreamDownload
+export { fileStreamDownload }

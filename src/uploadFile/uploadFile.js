@@ -22,4 +22,4 @@ const uploadFile = (e, typeList) => {
   })
 }
 
-module.exports = uploadFile
+export { uploadFile }
